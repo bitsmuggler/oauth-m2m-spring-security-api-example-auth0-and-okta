@@ -113,7 +113,7 @@ The configuration of the spring-boot app is located in ``/src/main/resources/app
 * Public Endpoint: ``http://localhost:8080/api/public``
 * Private Endpoint: ``http://localhost:8080/api/public``
     1. Get a token: ``https://<<your-auth0-issuer-uri>>/oauth/token``
-        * cURL: ``curl --location --request POST 'https://dev-301706.okta.com/oauth2/ausr5mf82ovfbtxo74x6/v1/token' \
+        * cURL: ``curl --location --request POST 'https://<<your okta org>>.okta.com/oauth2/ausr5mf82ovfbtxo74x6/v1/token' \
                   --header 'Authorization: Basic <<basic auth string>>' \
                   --header 'Content-Type: application/x-www-form-urlencoded' \
                   --data-urlencode 'grant_type=client_credentials' \
@@ -123,7 +123,7 @@ The configuration of the spring-boot app is located in ``/src/main/resources/app
             --header 'Authorization: Bearer <<your bearer token>>'``
 * Private Scoped Endpoint
     1. Get a token with the desired scope
-        * cURL: ````curl --location --request POST 'https://dev-301706.okta.com/oauth2/ausr5mf82ovfbtxo74x6/v1/token' \
+        * cURL: ````curl --location --request POST 'https://<<your okta org>>.okta.com/oauth2/ausr5mf82ovfbtxo74x6/v1/token' \
                                     --header 'Authorization: Basic <<basic auth string>>' \
                                     --header 'Content-Type: application/x-www-form-urlencoded' \
                                     --data-urlencode 'grant_type=client_credentials' \
