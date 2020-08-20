@@ -35,7 +35,7 @@ This introduction supports two possible Identity-as-a-Service (IDaas) solutions.
        (C)  The client calls your API with the issued token.     
 
 
-## Auth0
+## [Auth0](https://auth0.com)
 
 ### Configuration
 
@@ -90,7 +90,7 @@ The configuration of the spring-boot app is located in ``/src/main/resources/app
     * ``Applications > APIs > Machine to Machine Applications > Your API > Select read:permissions``
     
     
-## Okta
+## [Okta](https://developer.okta.com)
 
 ### Configuration    
        
@@ -133,11 +133,9 @@ The configuration of the spring-boot app is located in ``/src/main/resources/app
                   --header 'Authorization: Bearer <<your token>>'```               
                           
                       
-              
 ## Start the example app
 
 ``mvn spring-boot:run``       
-
 
 ## Resources
 
