@@ -74,8 +74,8 @@ The configuration of the spring-boot app is located in ``/src/main/resources/app
                       "scope": "read:messages"
                   }'``
     2. Call the api with the token
-        * cURL: ``curl --location --request GET 'localhost:8080/api/private' \
-                  --header 'Authorization: Bearer <<your token>>'`               
+        * cURL: ```curl --location --request GET 'localhost:8080/api/private' \
+                  --header 'Authorization: Bearer <<your token>>'```               
     
              
     
