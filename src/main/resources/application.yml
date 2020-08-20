@@ -1,8 +1,8 @@
 auth0:
-  audience: https://auth0-integration-test
+  audience: your-configured-audience
 spring:
   security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://dev-1234.eu.auth0.com/
+          issuer-uri: your-issuer-url
