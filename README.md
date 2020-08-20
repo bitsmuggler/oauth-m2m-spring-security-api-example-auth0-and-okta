@@ -1,6 +1,6 @@
 # Auth0 spring-security API M2M Authentication Example
 
-This is an example project how to map the (OAuth client credentials flow)[https://tools.ietf.org/html/rfc6749#section-4.4] (machine-to-machine authentication) with spring-security and Auth0 the client credentials flow.
+This is an example project how to map the [OAuth client credentials flow](https://tools.ietf.org/html/rfc6749#section-4.4) (machine-to-machine authentication) with spring-security and Auth0 the client credentials flow.
 
 
 ## OAuth 2.0 Client Credentials Flow
@@ -40,7 +40,7 @@ This is an example project how to map the (OAuth client credentials flow)[https:
 
 The configuration of the spring-boot app is located in ``/src/main/resources/application.yml``
 
-1. Set your auth0 ``audience` id
+1. Set your auth0 ``audience`` id
 1. Set your ``issuer`` uri
 
 ## Usage of the endpoints
