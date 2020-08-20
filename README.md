@@ -1,11 +1,11 @@
-# Auth0 spring-security API M2M Authentication Example
+# Auth0 API M2M Authentication Example with Spring-Security
 
 This is an example project how to map the [OAuth client credentials flow](https://tools.ietf.org/html/rfc6749#section-4.4) (machine-to-machine authentication) with spring-security and [Auth0](https://auth0.com/de/) the client credentials flow.
 
 
 ## OAuth 2.0 Client Credentials Flow
 
-👉 See the [OAuth 2.0 RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.4)
+👉  See the [OAuth 2.0 RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.4)
 
 
      +---------+                                   +---------------+
@@ -33,8 +33,11 @@ This is an example project how to map the [OAuth client credentials flow](https:
 
 ## Configuration Auth0
 
-* Private Scoped Endpoint
-    * Grant your app to the permission ``read:messages``
+* Register and setup your tenant
+* Create an API ``APIs > Create API``
+* Create a permission in your created API ``APIs > your created API > Permission > create Permission read:messages``
+* Create an application which the api should consume ``Applications > Create Application > Machine to Machine Applications``
+* Grant your app to the permission ``Applications > your application > APIs > select your API > Add the permission read:messages``
 
 ## Configuration spring-boot app
 
@@ -80,8 +83,15 @@ The configuration of the spring-boot app is located in ``/src/main/resources/app
 
 ``mvn spring-boot:run``       
 
+## Troubleshooting
+
+* "Error: Client has not been granted scopes"
+    *  Grant your app to the permission ``read:messages``
+    * ``Applications > APIs > Machine to Machine Applications > Your API > Select read:permissions``
+
 
 ## Resources
 
 * [OAuth 2.0 RFC 6749](https://tools.ietf.org/html/rfc6749#section-4.4)
 * [Client Credentials Flow explained by Auth0](https://auth0.com/docs/flows/client-credentials-flow)
+* [Using machine to Machine (M2M) Authorization](https://auth0.com/blog/using-m2m-authorization/)
