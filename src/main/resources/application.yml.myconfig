@@ -1,0 +1,16 @@
+#auth0:
+#  audience: https://auth0-integration-test
+#spring:
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: https://dev-1234.eu.auth0.com/
+auth0:
+  audience: api://okta-integration-test
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-301706.okta.com/oauth2/ausr5mf82ovfbtxo74x6
